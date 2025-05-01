@@ -27,7 +27,7 @@ button.MouseButton1Click:Connect(function()
         connection = RunService.RenderStepped:Connect(function()
             VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.R, false, game)
             VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.R, false, game)
-            wait(0.01) -- Delay between presses
+            wait(0.001)
         end)
     else
         if connection then
